@@ -11,3 +11,8 @@ Please ensure the necessary packages and versions are installed. If issues, occu
 
 ![image](https://user-images.githubusercontent.com/88155528/138607713-838fe26b-57c1-4812-a598-3b0a65f769e3.png)
 ![image](https://user-images.githubusercontent.com/88155528/138607752-51f68258-b870-4827-91b7-f6df4ad42f58.png)
+
+
+The Seurat files could not be uploaded as they are too big and could not be compressed. Use these to produce Seurat objects if you wish to test the application. If you wish to test with resolution 0.15 set both the highest and lowest slider to the resolution. It should take around 1.5 hours but may vary depending on the device
+WT1.data <- Read10X(data.dir = "/data/2623287c/Project1/newtcell/t_cell_raw_data/WT1")
+WT1 <- CreateSeuratObject(counts = WT1.data, project = "WT1", min.cells = 3)
